@@ -1,0 +1,18 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  align-items: left;
+
+}
+
+.footer-content{
+  color: darkgrey;
+  text-align: left;
+  font-family: sans-serif;
+
+}
+
+

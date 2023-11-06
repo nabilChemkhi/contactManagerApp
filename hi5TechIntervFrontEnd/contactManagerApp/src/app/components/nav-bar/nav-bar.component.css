@@ -1,0 +1,19 @@
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  /*background-color: aqua;*/
+}
+
+.mat-mdc-card{
+  padding: 0.5rem;
+  background-color: rgb(63, 81, 181);
+  /* border: solid ; */
+  color:#fff;
+  border: solid;
+
+}
+
+.mat-mdc-card span{
+  padding-left: 1rem;
+  padding-right: 2rem;
+}
