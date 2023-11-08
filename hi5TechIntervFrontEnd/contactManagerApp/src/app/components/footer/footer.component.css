@@ -3,15 +3,22 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: red;
   align-items: left;
+  height: 40px;
 
+}
+.mat-elevation-z2{
+  background-color: aliceblue;
 }
 
 .footer-content{
+  background-color: aliceblue;
   color: darkgrey;
   text-align: left;
   font-family: sans-serif;
+  float: right;
 
 }
 

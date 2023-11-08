@@ -1,4 +1,4 @@
-.example-card {
+/* .example-card {
   max-width: 400px;
   margin: 8px;
 }
@@ -9,5 +9,6 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-gap: 10px; */
+  // grid-gap: 10px;
 }
+*/

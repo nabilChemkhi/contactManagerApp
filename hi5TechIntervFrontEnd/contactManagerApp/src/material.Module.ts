@@ -6,6 +6,7 @@ import {MatButtonModule} from "@angular/material/button"
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from "@angular/material/input";
 import {MatDividerModule} from '@angular/material/divider';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   exports: [
@@ -16,7 +17,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatInputModule,
     MatIconModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatPaginatorModule
   ]
 })
 export class MaterialModel{
