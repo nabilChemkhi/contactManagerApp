@@ -1,4 +1,4 @@
-
+/*
 .container {
   max-height: calc(100vh - 65px);
   flex-wrap: wrap;
@@ -37,5 +37,86 @@
 @media screen and (max-width: 768px) {
   .example-card {
     width: calc(100% - 16px);
+  }
+} */
+
+/* .container {
+  max-height: calc(100vh - 65px);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+}
+
+.example-card {
+  margin: 8px;
+  width: calc(50% - 16px);
+}
+
+.icon {
+  vertical-align: middle;
+  margin-right: 4px;
+  font-size: 22px;
+}
+
+.paginator-container {
+  background-color: aliceblue;
+  position: fixed;
+  bottom: 2px;
+  right: 20px;
+  z-index: 1;
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .example-card {
+    width: calc(100% - 16px);
+  }
+} */
+
+
+
+.container {
+  max-height: calc(100vh - 65px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Ajustez ceci en fonction de votre mise en page */
+  overflow: hidden; /* Masquer les éléments qui dépassent la zone visible */
+   /* margin-bottom: 100px;
+  padding-bottom: 120px; */
+}
+
+.example-card {
+  margin: 8px;
+  width: calc(33.33% - 16px); /* Répartir en 3 colonnes (ajustez si nécessaire) */
+
+
+  /* Ajoutez d'autres styles de carte ici */
+}
+
+.paginator-container {
+  background-color: aliceblue;
+  position: fixed;
+  bottom: 2px;
+  right: 20px;
+  width: 50%;
+  z-index: 1;
+  height: 55px;
+  /* width: calc(100% - 40px);  */
+}
+
+.icon {
+  vertical-align: middle;
+  margin-right: 4px;
+  font-size: 22px;
+}
+/* responsive */
+@media screen and (max-width: 768px) {
+  .example-card {
+    width: calc(50% - 16px);
   }
 }

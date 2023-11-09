@@ -1,24 +1,59 @@
-<!-- <div class="contain">
-<mat-card *ngFor="let item of numbers" class="example-card">
+<mat-card class="example-card">
+  <div class="horizontal-container">
+    <div class="mat-50">
+      <mat-card-header>
+        <mat-card-title>{{contact?.name}}</mat-card-title>
+        <mat-card-subtitle><mat-icon class="icon">contact_phone</mat-icon>{{contact?.phoneNumber}}</mat-card-subtitle>
+        <mat-card-subtitle><mat-icon class="icon">contact_mail</mat-icon>{{contact?.email}}</mat-card-subtitle>
+      </mat-card-header>
+    </div>
+    <div class="mat-50">
+      <mat-card-content>
+        <p>
+          {{contact?.description}}
+        </p>
+      </mat-card-content>
+    </div>
+  </div>
+  <img mat-card-image src={{contact?.image}} alt="this is contact image">
+
+  <mat-card-actions>
+    <button class="button" mat-raised-button color="primary">SHARE</button>
+  <button (click)="closePopup()" class="button" mat-raised-button color="accent" >
+    Close
+  </button>
+  </mat-card-actions>
+
+</mat-card>
+
+<!-- <mat-card>
   <mat-card-header>
-    <mat-card-title-group>
-      <mat-card-title>{{name}}</mat-card-title>
-      <mat-card-subtitle>{{phone}}</mat-card-subtitle>
-      <mat-card-subtitle>{{email}}</mat-card-subtitle>
-      <img mat-card-sm-image src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" >
-    </mat-card-title-group>
+    <h1>fdsf</h1>
   </mat-card-header>
   <mat-card-content>
-    {{longText}}
-    <mat-divider></mat-divider>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input formControlName="name" matInput />
+    </mat-form-field>
+    <mat-form-field class="mat-50">
+      <mat-label>E-mail</mat-label>
+      <input formControlName="email" matInput />
+    </mat-form-field>
+    <mat-form-field class="mat-50">
+      <mat-label>Phone Number</mat-label>
+      <input formControlName="phoneNumber" matInput />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Image URL</mat-label>
+      <input formControlName="image" matInput />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <textarea formControlName="description" matInput></textarea>
+    </mat-form-field>
   </mat-card-content>
   <mat-card-actions>
-
-    <button mat-button><mat-icon>pageview</mat-icon></button>
-    <button mat-button><mat-icon>edit</mat-icon></button>
-    <button mat-button><mat-icon>delete_forever</mat-icon></button>
-    <button mat-button style="margin-left: 30%;"><mat-icon>share</mat-icon></button>
+    <button class="button" mat-raised-button color="primary" type="submit">Save</button>
+    <button class="button" (click)="closePopup()" mat-raised-button color="accent">Close</button>
   </mat-card-actions>
-</mat-card>
-</div>
- -->
+</mat-card> -->

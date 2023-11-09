@@ -1,0 +1,46 @@
+<div *ngIf="contactForm">
+<form  [formGroup]="contactForm" (ngSubmit)="saveContact()">
+  <mat-card>
+    <mat-card-header>
+      <h1>{{titlePopup}}</h1>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field style="display: none"  >
+        <mat-label>Id</mat-label>
+        <input formControlName="id" matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+          <input  formControlName="name" matInput>
+        </mat-form-field>
+        <mat-form-field class="mat-50">
+        <mat-label>E-mail</mat-label>
+          <input  formControlName="email" matInput>
+        </mat-form-field>
+        <mat-form-field class="mat-50">
+        <mat-label >Phone Number</mat-label>
+          <input  formControlName="phoneNumber" matInput>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Image</mat-label>
+            <input  formControlName="phoneNumber" matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Description</mat-label>
+              <textarea  formControlName="phoneNumber" matInput></textarea>
+          </mat-form-field>
+
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button  class="button" mat-raised-button color="primary" type="submit">
+        Save
+      </button>
+      <button (click)="closePopup()" class="button" mat-raised-button color="accent" >
+        Close
+      </button>
+
+    </mat-card-actions>
+  </mat-card>
+</form>
+</div>

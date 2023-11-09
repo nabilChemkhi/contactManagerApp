@@ -1,14 +1,47 @@
-/* .example-card {
-  max-width: 400px;
-  margin: 8px;
+.example-card {
+  max-width: fit-content;
 }
 
-.contain{
 
-  margin: 10px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  // grid-gap: 10px;
+
+.icon {
+  vertical-align: middle;
+  margin-right: 4px;
+  font-size: 22px;
 }
-*/
+
+.mat-card{
+  margin: 2%;
+  text-align: left;
+}
+.button{
+  margin: 2px;
+}
+
+.mat-50{
+  width: 48%;
+  margin: 1%;
+}
+
+
+/* .mat-50{
+  width: 48%;
+
+  box-sizing: border-box;
+} */
+
+.horizontal-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .mat-50 {
+  width: 50%;
+  float: left;
+}
+
+.horizontal-container::after {
+  content: "";
+  display: table;
+  clear: both;
+} */

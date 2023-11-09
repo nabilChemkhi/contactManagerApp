@@ -4,12 +4,13 @@
   left: 0;
   width: 100%;
   /* background-color: #fff; */
-  background-color: red;
+  background-color: aliceblue;
   align-items: left;
-  height: 40px;
+  height: 60px;
+  z-index: 0.5;
 
 }
-.mat-elevation-z2{
+.bb{
   background-color: aliceblue;
 }
 

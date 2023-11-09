@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactListComponent } from './components/contact-list/contact-list.component';
 import { EditContactComponent } from './components/edit-contact/edit-contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddContactComponent } from './components/add-contact/add-contact.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     ContactComponent,
     ContactListComponent,
-    EditContactComponent
+    EditContactComponent,
+    AddContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
