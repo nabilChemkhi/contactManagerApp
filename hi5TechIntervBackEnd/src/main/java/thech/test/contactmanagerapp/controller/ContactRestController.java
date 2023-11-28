@@ -9,11 +9,11 @@ import thech.test.contactmanagerapp.model.Contact;
 import thech.test.contactmanagerapp.service.ContactService;
 
 import java.util.List;
-import java.util.Optional;
+
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/contact")
+@RequestMapping("/api/v1//contact")
 public class ContactRestController {
 
     private final ContactService contactService;
@@ -26,16 +26,10 @@ public class ContactRestController {
 
     @GetMapping("/getById/{id}")
     public ResponseEntity<Contact> getContactById(@PathVariable("id") Long id) {
-        Optional<Contact> optionalContact = contactService.findContactById(id);
-        if (optionalContact.isPresent()) {
-            Contact contact = optionalContact.get();
-            return new ResponseEntity<>(contact, HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+        return   contactService.findContactById(id)
+                .map(contact -> new ResponseEntity<>(contact, HttpStatus.OK))
+                .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
 
-//        Optional<Contact> contact = contactService.findContactById(id);
-//         return new ResponseEntity<>(contact, HttpStatus.OK).orElse(()-> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
     @PostMapping("/add")

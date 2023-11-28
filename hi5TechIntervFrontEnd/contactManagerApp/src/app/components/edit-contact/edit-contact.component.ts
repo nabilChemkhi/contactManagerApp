@@ -23,7 +23,7 @@ export class EditContactComponent {
   ) {}
 
   ngOnInit(): void {
-    const contactId = this.data.code; // Obtenez l'ID du contact à éditer depuis les données
+    const contactId = this.data.code;
 
     this.contactServ.getContactById(contactId).subscribe((contact) => {
       this.titlePopup = 'Edit Contact';
@@ -45,7 +45,7 @@ export class EditContactComponent {
       this.contactServ.updateContact(contactModified).subscribe(
         (response) => {
           console.log('Contact edited successfully', response);
-          this.contactServ.updateContacts(); // Déclenchez la mise à jour de la liste de contacts
+          this.contactServ.updateContacts();
           this.closePopup();
         },
         (error) => {

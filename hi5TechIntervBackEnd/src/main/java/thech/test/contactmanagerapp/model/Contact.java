@@ -2,6 +2,7 @@ package thech.test.contactmanagerapp.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.boot.autoconfigure.web.WebProperties;
@@ -10,6 +11,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
 public class Contact implements Serializable {
     @Id

@@ -1,0 +1,58 @@
+/* Alignement vertical et horizontal au milieu de la page */
+.login-card {
+  width: fit-content;
+  margin:  auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   /* Utilisez min-height au lieu de height */
+  margin-top: 20%; /* Ajustez cette valeur selon vos besoins */
+  margin-bottom: 20%; /* Ajustez cette valeur selon vos besoins */
+}
+
+.login-content {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.login-button {
+  margin-top: 16px;
+}
+
+/* Facultatif : Style pour les messages d'erreur mat-error */
+.mat-error {
+  color: red;
+  font-size: 12px;
+}
+/* Alignement vertical et horizontal au milieu de la page */
+.login-card {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.login-content {
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.login-button {
+  margin-top: 16px;
+}
+
+/* Facultatif : Style pour les messages d'erreur mat-error */
+.mat-error {
+  color: red;
+  font-size: 12px;
+}

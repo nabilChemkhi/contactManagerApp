@@ -10,5 +10,5 @@ public interface ContactService {
     public List<Contact> findAllContacts();
     public Contact updateContact(Contact contact);
     public void deleteContact(Long id);
-    public Optional<Contact> findContactById(Long id);
+     Optional<Contact> findContactById(Long id);
 }

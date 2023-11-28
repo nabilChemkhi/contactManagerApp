@@ -9,6 +9,7 @@
     </div>
     <div class="mat-50">
       <mat-card-content>
+        <h2>Contact info: </h2>
         <p>
           {{contact?.description}}
         </p>
@@ -17,7 +18,7 @@
   </div>
   <img mat-card-image src={{contact?.image}} alt="this is contact image">
 
-  <mat-card-actions>
+  <mat-card-actions >
     <button class="button" mat-raised-button color="primary">SHARE</button>
   <button (click)="closePopup()" class="button" mat-raised-button color="accent" >
     Close

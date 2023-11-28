@@ -1,10 +1,7 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { Contact } from 'src/app/models/contact';
 import { ContactService } from 'src/app/services/contact.service';
 import { PageEvent } from '@angular/material/paginator';
-import { FormsModule } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { AddContactComponent } from '../add-contact/add-contact.component';
 import { EditContactComponent } from '../edit-contact/edit-contact.component';
@@ -19,7 +16,7 @@ import { ContactComponent } from '../contact/contact.component';
 export class ContactListComponent implements OnInit {
 
 
-  //ngModel?:FormsModule
+
   searchText: string = ''
   sortOrder: string = ''
 
@@ -73,7 +70,7 @@ export class ContactListComponent implements OnInit {
   sortContacts() {
     this.filteredContacts = [...this.contacts];
     this.filteredContacts.sort((a, b) => {
-      //console.log(this.filteredContacts)
+
 
       if (this.sortOrder === 'name') {
         return a.name.localeCompare(b.name);
@@ -81,9 +78,6 @@ export class ContactListComponent implements OnInit {
       if (this.sortOrder === 'email') {
         return a.email.localeCompare(b.email);
       }
-      // Add more sorting options as needed
-
-      // Default case when sortOrder doesn't match any option
       return 0;
     });
   }
